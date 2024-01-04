@@ -1,0 +1,3 @@
+{
+  "data_endpoint": "https://hg-production-taskmanager-ssc.ortmd733nb9.us-east.codeengine.appdomain.cloud/api/v1/datasets/${apiList![index].uid"
+}

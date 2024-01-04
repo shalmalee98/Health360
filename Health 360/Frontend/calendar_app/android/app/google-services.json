@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670879866848",
+    "project_id": "health360-25343",
+    "storage_bucket": "health360-25343.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670879866848:android:de1662ee588567a7329585",
+        "android_client_info": {
+          "package_name": "com.example.Health_Guardian"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXA_lbU7VuAQGxM-MtKcqdk-bWPg678Lw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

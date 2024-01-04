@@ -1,0 +1,639 @@
+{
+	"info": {
+		"_postman_id": "28768023-59d5-43cd-8ef1-a837b2410985",
+		"name": "App Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26532069"
+	},
+	"item": [
+		{
+			"name": "PHQ_8",
+			"item": [
+				{
+					"name": "Score calculate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question1\": 3,\r\n    \"question2\": 2,\r\n    \"question3\": 3,\r\n    \"question4\": 2,\r\n    \"question5\": 1,\r\n    \"question6\": 2,\r\n    \"question7\": 4,\r\n    \"question8\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/phq_8/score_calculate_phq8"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch score",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/phq_8/64e2516431ccc8d79845dd26"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question1\": 3,\r\n    \"question2\": 2,\r\n    \"question3\": 3,\r\n    \"question4\": 2,\r\n    \"question5\": 1,\r\n    \"question6\": 2,\r\n    \"question7\": 4,\r\n    \"question8\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://128.205.39.59:30500/phq_8/score_calculate_phq8/"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/phq_8/64e2516431ccc8d79845dd26"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sleep_Q",
+			"item": [
+				{
+					"name": "Get scale",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\" : \"user01\",\r\n    \"question1\" : 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/sleep_q/get_scale"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch score",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://app-xftewtdwlq-uc.a.run.app/sleep_q/64e577155de7a6f078393e45"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"user02\",\r\n    \"question1\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://128.205.39.59:30500/sleep_q/get_scale"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/sleep_q/649f6c28e86ca69b8a49a129"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GAD_7",
+			"item": [
+				{
+					"name": "Calculate Score",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"user02\",\r\n    \"question1\": 3,\r\n    \"question2\": 2,\r\n    \"question3\": 3,\r\n    \"question4\": 1,\r\n    \"question5\": 2,\r\n    \"question6\": 1,\r\n    \"question7\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/gad_7/score_calculate_gad7"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch score",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/gad_7/64e58136994f40543a4ff304"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"user02\",\r\n    \"question1\": 3,\r\n    \"question2\": 2,\r\n    \"question3\": 1,\r\n    \"question4\": 2,\r\n    \"question5\": 1,\r\n    \"question6\": 2,\r\n    \"question7\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://128.205.39.59:30500/gad_7/score_calculate_gad7/"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/gad_7/64e5819bf3a2565e2d43e0cb"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUDIT",
+			"item": [
+				{
+					"name": "Calculate score",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"user02\",\r\n    \"question1\": 2,\r\n    \"question2\": 1,\r\n    \"question3\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/gad_7/score_calculate_gad7"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch score",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/gad_7/64bc4cebded5543bb841af95"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"user02\",\r\n    \"question1\": 2,\r\n    \"question2\": 1,\r\n    \"question3\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://128.205.39.59:30500/audit/score_calculate_audit/"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/audit/64e5823af3a2565e2d43e0ce"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parkinsons",
+			"item": [
+				{
+					"name": "Analyse audio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "audio",
+									"type": "file",
+									"src": "/E:/CodeBase/cse611-spring2023-team-IBMDigitalHealth/Server/Health_Guardian/uploads/audio.wav"
+								},
+								{
+									"key": "user",
+									"value": "user01",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/par_d/score_calculate_pard"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch score",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/par_d/64e57fa3ac44fa4b41590eb6"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "user02",
+									"type": "text"
+								},
+								{
+									"key": "audio",
+									"type": "file",
+									"src": "/E:/CodeBase/cse611-spring2023-team-IBMDigitalHealth/Server/Health_Guardian/uploads/audio.wav"
+								}
+							]
+						},
+						"url": "http://128.205.39.59:30500/par_d/score_calculate_pard"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/par_d/64e579e530d2538b824a1ff3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alzheimer",
+			"item": [
+				{
+					"name": "Calculate Score",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\":\"user02\",\r\n    \"text\": \"Hello Hi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/alzh_d/score_calculate_alz/"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Score",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/alzh_d/64e58315f3a2565e2d43e0d1"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"user02\",\r\n    \"text\": \"A young boy is reaching for the cookie jar. He is standing on a stool and is almost falling over. His sister is standing beside him and talking to him. On the other side of the kitchen their mom is wiping dishes. The water from the faucet is running over on to the floor.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://128.205.39.59:30500/alzh_d/score_calculate_alz/"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/gad_7/64e466d15a479592f971f7a1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Diabetes",
+			"item": [
+				{
+					"name": "Calculate score",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"user02\",\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/diab/score_calculate_diab/"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Score",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://app-xftewtdwlq-uc.a.run.app/diab/64e4319c3e2e6f49991039e9"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\":\"user02\",\r\n    \"score\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://128.205.39.59:30500/diab/score_calculate_diab/"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/diab/64e58365f3a2565e2d43e0d3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Data_Collection",
+			"item": [
+				{
+					"name": "Fetch records",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/data/user01"
+					},
+					"response": []
+				},
+				{
+					"name": "local",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://128.205.39.59:30500/data/user01"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Audio FIle",
+			"item": [
+				{
+					"name": "Play file",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://app-xftewtdwlq-uc.a.run.app/get_audio/file/user01_parkinsons_20230820010420843.wav"
+					},
+					"response": []
+				},
+				{
+					"name": "All filenames",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://app-xftewtdwlq-uc.a.run.app/get_audio/all"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete file",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://128.205.39.59:30500/get_audio/del/deletethis.txt"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://128.205.39.59:30500/get_audio/all"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"user01\",\r\n    \"password\" : \"pw1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/users/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://app-xftewtdwlq-uc.a.run.app/users/645881bce9b7422cab24ba08"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"user01\",\r\n    \"password\" : \"pw1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://app-xftewtdwlq-uc.a.run.app/users/login"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

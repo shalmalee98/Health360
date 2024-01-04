@@ -1,0 +1,34 @@
+name: Push Images to GHCR
+on:
+  push:
+    branches:
+      - main # Adjust to the branch that trigger the workflow on
+jobs:
+      push-store-image:
+        runs-on: ubuntu-latest
+        permissions:
+          contents: read
+          packages: write
+        steps:
+          - name: ‘Checkout GitHub Action’
+            uses: actions/checkout@v3
+          - name: set lower case owner name
+            run: |
+              echo “OWNER_GHRC=${OWNER,,}” >>${GITHUB_ENV}
+            env:
+              OWNER: ‘${{ github.repository_owner }}’
+          - name: ‘Login to GitHub Container Registry’
+            uses: docker/login-action@v1
+            with:
+              context: ./{'Health 360'}/Backend/Health_Guardian
+              registry: ghcr.io
+              username: ${{github.actor}}
+              password: ${{secrets.GITHUB_TOKEN}}
+          - name: ‘Build and Tag Docker Image’
+            run: |
+              docker build . --tag ghcr.io/${OWNER_GHRC}/health360-nodeapp:${{ github.sha }}
+              docker tag ghcr.io/${OWNER_GHRC}/health360-nodeapp:${{ github.sha }} ghcr.io/${OWNER_GHRC}/health360-nodeapp:final2
+          - name: ‘Push Image to GHCR’
+            run: |
+              docker push ghcr.io/${OWNER_GHRC}/health360-nodeapp:${{ github.sha }}
+              docker push ghcr.io/${OWNER_GHRC}/health360-nodeapp:final2
