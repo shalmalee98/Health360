@@ -56,25 +56,17 @@ async function loginUser(credentials) {
 const defaultTheme = createTheme();
 
 export default function Login(props) {
-    const {user,setUser} = props;
-    const [username, setUsername] = React.useState('');
-    const [password, setPassword] = React.useState('');
+  const {user,setUser} = props;
+  const [username, setUsername] = React.useState('');
+  const [password, setPassword] = React.useState('');
 
-    React.useEffect(() => {
-      if (user){
-        navigate("/");
-      }
-    },[user])
+  React.useEffect(() => {
+    if (user){
+      navigate("/");
+    }
+  },[user])
 
-    const navigate = useNavigate();
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const data = new FormData(event.currentTarget);
-  //   console.log({
-  //     email: data.get('email'),
-  //     password: data.get('password'),
-  //   });
-  // };
+  const navigate = useNavigate();
   const handleSubmit = async e => {
     e.preventDefault();
     const response = await signIn({
